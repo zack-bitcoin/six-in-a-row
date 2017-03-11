@@ -1,5 +1,5 @@
 var c = document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
+var ctx = c.getContext("2d");
 var empty = document.createElement("img");
 empty.setAttribute("src", "empty.png");
 var black = document.createElement("img");

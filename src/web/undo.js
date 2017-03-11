@@ -8,6 +8,7 @@ function undo1() {
     spend_button.onclick = function() {
 	variable_get(["undo"], spend3);
     };
+    document.body.appendChild(document.createElement("br"));
     document.body.appendChild(spend_button);
     document.body.appendChild(document.createElement("br"));
 }
