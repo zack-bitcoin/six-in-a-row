@@ -40,22 +40,33 @@ handle_call(_, _From, X) -> {reply, X, X}.
 
 board() ->
     B = gen_server:call(?MODULE, board),
-    B#board.state.
+    to_lists(B#board.state).
+to_lists(X) when is_atom(X) ->
+    X;
+to_lists([]) -> [];
+to_lists([H|T]) -> 
+    [to_lists(H)|
+     to_lists(T)];
+to_lists(X) when is_tuple(X) ->
+    to_lists(tuple_to_list(X)).
+
+
 move_number() ->
     B = gen_server:call(?MODULE, board),
     B#board.move_number.
     
 new_game() -> new_game(?default_size).
 new_game(Size) ->
-    gen_server:cast(?MODULE, {new_game, Size}),
-    draw:doit().
+    gen_server:cast(?MODULE, {new_game, Size}).
 undo() ->
-    gen_server:cast(?MODULE, undo),
-    draw:doit().
+    gen_server:cast(?MODULE, undo).
     
 play(X, Y) ->
-    gen_server:cast(?MODULE, {play, X, Y}),
-    draw:doit().
+    B = gen_server:call(?MODULE, board),
+    S = B#board.state,
+    A = element(Y, element(X, S)),
+    A = empty,
+    gen_server:cast(?MODULE, {play, X, Y}).
 
 empty_board(Size) -> 
     B = empty_helper(Size),

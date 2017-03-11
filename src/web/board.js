@@ -1,32 +1,39 @@
-spend1();
-function spend1() {
-    var pic = document.createElement("img");
-    pic.setAttribute("id", "board");
-    pic.setAttribute("src", "board.png");
-    pic.setAttribute("onclick", "spend2(event)");
-    document.body.appendChild(pic);
-    document.body.appendChild(document.createElement("br"));
-}
+var c = document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var empty = document.createElement("img");
+empty.setAttribute("src", "empty.png");
+var black = document.createElement("img");
+black.setAttribute("src", "black.png");
+var white = document.createElement("img");
+white.setAttribute("src", "white.png");
+variable_get(["board"], board);
 function spend2(event) {
-    //var pic = document.getElementById("board");
     loc = getOffset(event);
     Y = Math.round((loc.x-10) / 19)+1;
     X = Math.round((loc.y-10) / 19)+1;
     console.log(X);
     console.log(Y);
-    variable_get(["play", X, Y], spend3);
+    local_get(["play", X, Y]);
+    variable_get(["board"], function(x){board2(x, Y, X);} );
 }
-function spend3(x) {
-    var pic = document.getElementById("board");
-    pic.setAttribute("src", "board.png?" + new Date().getTime());
-
-	//var fee = parseInt(spend_fee.value, 16);
-	//local_get(["doit", fee]);
-	//console.log(spend_fee.value);
-	//variable_get([spend_fee.value, ds], doit2);
-	//console.log(ABC.value);
-
+var pixels = 19;
+function board(x) {
+    console.log("board");
+    console.log(x);
+    xLength = x.length;
+    for (var i = 0; i < xLength; i++) {
+	for (var j = 0; j < xLength; j++) {
+	    board2(x, i, j);
+	}
+    }
 }
+function board2(x, i, j) {
+    var b = x[j][i];
+    if(b=="empty"){ctx.drawImage(empty, (i-1)*pixels, (j-1)*pixels);}
+    if(b=="black"){ctx.drawImage(black, (i-1)*pixels, (j-1)*pixels);}
+    if(b=="white"){ctx.drawImage(white, (i-1)*pixels, (j-1)*pixels);}
+}
+    
 function getOffset(evt) {
     var el = evt.target,
 	x = 0,
@@ -43,3 +50,5 @@ function getOffset(evt) {
 
     return { x: x, y: y };
 }
+
+c.addEventListener("mousedown", spend2, false);

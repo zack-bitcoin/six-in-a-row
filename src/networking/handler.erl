@@ -31,7 +31,7 @@ init(_Type, Req, _Opts) -> {ok, Req, no_state}.
 terminate(_Reason, _Req, _State) -> ok.
 -define(WORD, 10000000).%10 megabytes.
 doit({board}) ->
-    board:board();
+    {ok, board:board()};
 doit({new_game, Size}) ->
     board:new_game(Size);
 doit({undo}) ->

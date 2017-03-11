@@ -1,0 +1,2041 @@
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ sh start.sh
+  C-c C-c
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> ls
+().
+.gitignore             .rebar                 README.md              
+README.md~             deps                   docs                   
+ebin                   erl_crash.dump         images                 
+install.sh             kill_all_erlang.sh     rebar                  
+rebar.config           src                    start.sh               
+start.sh~              
+ok
+2> board:new(10).
+** exception error: undefined function board:new/1
+3> board:new_game(10).
+ok
+4> make_image:doit().
+[]
+5> board:empty_board(10).
+** exception error: undefined function board:empty_board/1
+6> draw_board:doit().
+** exception error: undefined function draw_board:doit/0
+7> make_image:doit().
+[]
+8> board:board().
+{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,...}}
+9> new_game(5).
+** exception error: undefined shell command new_game/1
+10> board:new_game(5).
+ok
+11> make_image:doit().
+[]
+12> board:board().
+{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,...}}
+13> board:new_game(3).
+ok
+14> board:state().
+** exception error: undefined function board:state/0
+15> board:board().
+{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,...}}
+16> board:board().
+{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,...}}
+17> board:new_game(1).
+ok
+18> board:new_game(1).
+ok
+19> board:new_game(1).
+ok
+20>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:new_game(5).
+ok
+2> make_image:doit().
+[]
+3> board:play(2, 2).
+ok
+4> make_image:doit().
+[]
+5>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ cd src/
+zack:~/Hacking/row_of_6/src$ mv make_image.erl draw.erl
+zack:~/Hacking/row_of_6/src$ ls
+board.erl
+board.erl~
+constants.erl
+draw.erl
+draw.erl~
+empty_gen_server.save
+#inheritance.erl#
+inheritance.erl~
+make_image.erl~
+networking
+packer.erl
+testnet_app.erl
+testnet.app.src
+testnet_sup.erl
+testnet_sup.erl~
+web
+zack:~/Hacking/row_of_6/src$ cd ..
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/draw.erl
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:new_game(9).
+[]
+2> board:play(3, 3).
+[]
+3> board:play(4, 5).
+[]
+4>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh st`
+>   C-c C-c
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:new_game(10).
+[]
+2> board:move_number().
+1
+3> board:play(1,2).
+[]
+4> board:play(3,4).
+[]
+5> board:play(4,1).
+[]
+6> board:move_number().
+4
+7> 
+=ERROR REPORT==== 10-Mar-2017::12:10:42 ===
+Error in process <0.229.0> with exit value:
+{[{reason,{badmatch,<<>>}},
+  {mfa,{handler,handle,2}},
+  {stacktrace,[{handler,handle,2,
+                        [{file,"src/networking/handler.erl"},{line,13}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.2459>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.229.0>},
+        {method,<<"GET">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},40042}},
+        {host,<<"localhost">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[]},
+        {headers,[{<<"host">>,<<"localhost:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,
+                   <<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"connection">>,<<"keep-alive">>},
+                  {<<"upgrade-insecure-requests">>,<<"1">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<>>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,no_state}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+7> 
+=ERROR REPORT==== 10-Mar-2017::12:10:42 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.229.0> exit with reason: {[{reason,{badmatch,<<>>}},{mfa,{handler,handle,2}},{stacktrace,[{handler,handle,2,[{file,"src/networking/handler.erl"},{line,13}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2459>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.229.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40042}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+7> 
+=ERROR REPORT==== 10-Mar-2017::12:10:42 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.230.0> exit with reason: {[{reason,{badmatch,{error,enoent}}},{mfa,{external_handler,handle,2}},{stacktrace,[{external_handler,read_file,1,[{file,"src/networking/external_handler.erl"},{line,17}]},{external_handler,handle,2,[{file,"src/networking/external_handler.erl"},{line,13}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2505>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.230.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40044}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/favicon.ico">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[{file,<<"favicon.ico">>}]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+7> 
+=ERROR REPORT==== 10-Mar-2017::12:10:42 ===
+Error in process <0.230.0> with exit value:
+{[{reason,{badmatch,{error,enoent}}},
+  {mfa,{external_handler,handle,2}},
+  {stacktrace,[{external_handler,read_file,1,
+                                 [{file,"src/networking/external_handler.erl"},
+                                  {line,17}]},
+               {external_handler,handle,2,
+                                 [{file,"src/networking/external_handler.erl"},
+                                  {line,13}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.2505>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.230.0>},
+        {method,<<"GET">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},40044}},
+        {host,<<"localhost">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/favicon.ico">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[{file,<<"favicon.ico">>}]},
+        {headers,[{<<"host">>,<<"localhost:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,
+                   <<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"connection">>,<<"keep-alive">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<>>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,[]}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+7>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ emacs src/web/main.html
+emacs: Terminal type "dumb" is not powerful enough to run Emacs.
+It lacks the ability to position the cursor.
+If that is not the actual type of terminal you have,
+use the Bourne shell command `TERM=... export TERM' (C-shell:
+`setenv TERM ...') to specify the correct type.  It may be necessary
+to do `unset TERMINFO' (C-shell: `unsetenv TERMINFO') as well.
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ cd images/\
+>   C-c C-c
+zack:~/Hacking/row_of_6$ cd im
+bash: cd: im: No such file or directory
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ cd images
+zack:~/Hacking/row_of_6/images$ ls
+black.png  row15.png  row5.png
+board.png  row16.png  row6.png
+empty.png  row17.png  row7.png
+mark.png   row18.png  row8.png
+row10.png  row19.png  row9.png
+row11.png  row1.png   star.png
+row12.png  row2.png   white.png
+row13.png  row3.png
+row14.png  row4.png
+zack:~/Hacking/row_of_6/images$ cp * ../src/web/.
+zack:~/Hacking/row_of_6/images$ cd ..
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/draw.erl
+Compiled src/networking/handler.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",4,5]1> I can't handle this 
+1> [-6,"cGxheQ==",4,5]1> handler Data 1> ["play",7,6]1> I can't handle this 
+1> [-6,"cGxheQ==",7,6]1> handler Data 1> ["play",5,6]1> I can't handle this 
+1> [-6,"cGxheQ==",5,6]1> handler Data 1> ["play",4,5]1> I can't handle this 
+1> [-6,"cGxheQ==",4,5]1> 
+
+
+.
+* 4: syntax error before: '.'
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/networking/handler.erl
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",6,4]1> I can't handle this 
+1> [-6,"cGxheQ==",6,4]1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+Eh?
+
+Eh?
+
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/networking/handler.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",8,3]1> I can't handle this 
+1> [-6,"cGxheQ==",8,3]1> packer:pack(["play",6, 6]).
+<<"[-6,[-6,112,108,97,121],6,6]">>
+2> packer:unpack(["play", 6]).
+** exception throw: {error,{1,invalid_json}}
+     in function  jiffy:decode/2 (src/jiffy.erl, line 68)
+     in call from packer:unpack/1 (src/packer.erl, line 11)
+3>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/networking/handler.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",6,5]1> handler Data 1> ["play",8,7]1> handler Data 1> ["play",13,7]1> 
+  C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",14,8]1> 
+board:board().
+
+board:board().
+handler Data handler Data handler Data handler Data handler Data ["play",13,7]["play",14,14]["play",5,7]["play",10,8]["play",15,6]{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,black,empty,
+        empty,empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,empty,...},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty,...}}
+2> handler Data 2> ["new_game",4]2> handler Data 2> ["play",2,2]2> handler Data 2> ["play",3,3]2> handler Data 2> ["play",3,3]2> handler Data 2> ["play",3,1]2> handler Data 2> ["play",3,1]2> handler Data 2> ["play",4,0]2> died!2> 
+=ERROR REPORT==== 10-Mar-2017::12:45:58 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,4,0}}
+** When Server state == {board,[{3,1},{3,1},{3,3},{3,3},{2,2}],
+                               6,
+                               {{empty,empty,empty,empty},
+                                {empty,black,empty,empty},
+                                {black,empty,white,empty},
+                                {empty,empty,empty,empty}},
+                               4}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2> 
+=ERROR REPORT==== 10-Mar-2017::12:45:58 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.323.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2703>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.323.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40702}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",4,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+2> handler Data 2> ["play",4,0]2> died!2> 
+=ERROR REPORT==== 10-Mar-2017::12:46:00 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,4,0}}
+** When Server state == {board,[],1,
+                            {{empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2> 
+=ERROR REPORT==== 10-Mar-2017::12:46:00 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.339.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2730>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.339.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40714}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",4,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+2> handler Data 2> ["play",3,0]2> died!2> 
+=ERROR REPORT==== 10-Mar-2017::12:46:02 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,3,0}}
+** When Server state == {board,[],1,
+                            {{empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2> 
+=ERROR REPORT==== 10-Mar-2017::12:46:02 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.362.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2773>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.362.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40716}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",3,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+2> handler Data 2> ["play",3,1]2> handler Data 2> ["play",3,1]2>                                  empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2> 
+=ERROR REPORT==== 10-Mar-2017::12:46:02 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.362.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,17}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2773>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.362.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40716}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",3,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+2> handler Data 2> ["play",3,1]2> handler Data 2> ["play",3,1]2>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+Eh?
+
+Eh?
+
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",0,0]1> died!1> 
+=ERROR REPORT==== 10-Mar-2017::12:46:40 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,0,0}}
+** When Server state == {board,[],1,
+                            {{empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,16}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+1> 
+=ERROR REPORT==== 10-Mar-2017::12:46:40 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.177.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,16}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2389>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.177.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40726}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",0,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+1> handler Data 1> ["play",1,1]1> ==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",0,0]1> died!1> 
+=ERROR REPORT==== 10-Mar-2017::12:46:40 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,0,0}}
+** When Server state == {board,[],1,
+                            {{empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,16}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+1> 
+=ERROR REPORT==== 10-Mar-2017::12:46:40 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.177.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,16}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2389>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.177.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40726}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",0,0]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+1> handler Data 1> ["play",1,1]1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",20,20]1> died!1> 
+=ERROR REPORT==== 10-Mar-2017::12:47:28 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,20,20}}
+** When Server state == {board,[],1,
+                            {{empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty},
+                             {empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty,empty,empty,
+                                 empty,empty,empty,empty,empty}},
+                            19}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,18}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+1> 
+=ERROR REPORT==== 10-Mar-2017::12:47:28 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.177.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,18}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2389>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.177.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40756}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"14">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",20,20]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+1> handler Data 1> ["new_game",10]1> handler Data 1> ["play",1,1]1> handler Data 1> ["play",10,10]1> handler Data 1> ["play",5,6]1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> handler Data 1> ["play",3,6]1> handler Data 1> ["play",9,10]1> handler Data 1> ["play",6,15]1> handler Data 1> ["play",1,1]1> handler Data 1> ["play",1,19]1> handler Data 1> ["play",9,7]1> handler Data 1> ["play",12,3]1> handler Data 1> ["play",13,9]1> handler Data 1> ["undo"]1> handler Data 1> ["undo"]1> handler Data 1> ["undo"]1> handler Data 1> ["undo"]1> handler Data 1> ["undo"]1> handler Data 1> ["new_game",10]1> handler Data 1> ["play",7,5]1> handler Data 1> ["play",4,4]1> handler Data 1> ["play",5,7]1> handler Data 1> ["play",2,6]1> handler Data 1> ["undo"]1> handler Data 1> ["undo"]1> handler Data 1> ["new_game",15]1> handler Data 1> ["play",8,8]1> handler Data 1> ["play",9,5]1> handler Data 1> ["play",11,5]1> handler Data 1> ["play",8,10]1> handler Data 1> ["play",10,8]1> handler Data 1> ["play",11,7]1> handler Data 1> ["play",10,6]1> handler Data 1> ["new_game",5]1> handler Data 1> ["new_game",10]1> handler Data 1> ["new_game",100]1> handler Data 1> ["new_game",10]1> handler Data 1> ["new_game",15]1> 
+=ERROR REPORT==== 10-Mar-2017::13:03:48 ===
+Error in process <0.824.0> with exit value:
+{[{reason,{badmatch,{error,enoent}}},
+  {mfa,{external_handler,handle,2}},
+  {stacktrace,[{external_handler,read_file,1,
+                                 [{file,"src/networking/external_handler.erl"},
+                                  {line,17}]},
+               {external_handler,handle,2,
+                                 [{file,"src/networking/external_handler.erl"},
+                                  {line,13}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.3218>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.824.0>},
+        {method,<<"GET">>},
+        {version,'HTTP/1.1'},
+        {peer,{{10,0,0,1},36638}},
+        {host,<<"10.0.0.1">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/favicon.ico">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[{file,<<"favicon.ico">>}]},
+        {headers,[{<<"host">>,<<"10.0.0.1:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,
+                   <<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"connection">>,<<"keep-alive">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<>>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,[]}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+1> 
+=ERROR REPORT==== 10-Mar-2017::13:03:48 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.824.0> exit with reason: {[{reason,{badmatch,{error,enoent}}},{mfa,{external_handler,handle,2}},{stacktrace,[{external_handler,read_file,1,[{file,"src/networking/external_handler.erl"},{line,17}]},{external_handler,handle,2,[{file,"src/networking/external_handler.erl"},{line,13}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.3218>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.824.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{10,0,0,1},36638}},{host,<<"10.0.0.1">>},{host_info,undefined},{port,3010},{path,<<"/favicon.ico">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[{file,<<"favicon.ico">>}]},{headers,[{<<"host">>,<<"10.0.0.1:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,[]}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+1> handler Data 1> ["play",7,7]1> handler Data 1> ["play",7,9]1> handler Data 1> ["play",9,7]1> handler Data 1> ["play",8,8]1> handler Data 1> ["play",9,9]1> handler Data 1> ["play",8,10]1> handler Data 1> ["play",6,10]1> handler Data 1> ["play",9,8]1> handler Data 1> ["play",7,8]1> handler Data 1> ["play",10,8]1> handler Data 1> ["play",10,10]1> handler Data 1> ["play",8,7]1> handler Data 1> ["play",8,6]1> handler Data 1> ["play",6,8]1> handler Data 1> ["play",9,11]1> handler Data 1> ["play",5,7]1> handler Data 1> ["play",10,12]1> handler Data 1> ["play",11,9]1> handler Data 1> ["play",9,10]1> handler Data 1> ["play",7,10]1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ git init
+Initialized empty Git repository in /home/zack/Hacking/row_of_6/.git/
+zack:~/Hacking/row_of_6$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+	.gitignore
+	README.md
+	docs/
+	images/
+	install.sh
+	kill_all_erlang.sh
+	rebar.config
+	src/
+	start.sh
+
+nothing added to commit but untracked files present
+zack:~/Hacking/row_of_6$ git add .
+zack:~/Hacking/row_of_6$ git commit -m "first commit"
+[master (root-commit) 9172bbf] first commit
+ 157 files changed, 657 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 docs/compile.md
+ create mode 100644 docs/todo.md
+ create mode 100644 images/black.png
+ create mode 100644 images/board.png
+ create mode 100644 images/empty.png
+ create mode 100644 images/mark.png
+ create mode 100644 images/row1.png
+ create mode 100644 images/row10.png
+ create mode 100644 images/row11.png
+ create mode 100644 images/row12.png
+ create mode 100644 images/row13.png
+ create mode 100644 images/row14.png
+ create mode 100644 images/row15.png
+ create mode 100644 images/row16.png
+ create mode 100644 images/row17.png
+ create mode 100644 images/row18.png
+ create mode 100644 images/row19.png
+ create mode 100644 images/row2.png
+ create mode 100644 images/row3.png
+ create mode 100644 images/row4.png
+ create mode 100644 images/row5.png
+ create mode 100644 images/row6.png
+ create mode 100644 images/row7.png
+ create mode 100644 images/row8.png
+ create mode 100644 images/row9.png
+ create mode 100644 images/star.png
+ create mode 100644 images/white.png
+ create mode 100644 install.sh
+ create mode 100644 kill_all_erlang.sh
+ create mode 100644 rebar.config
+ create mode 100644 src/board.erl
+ create mode 100644 src/constants.erl
+ create mode 100644 src/draw.erl
+ create mode 100644 src/empty_gen_server.save
+ create mode 100644 src/networking/external_handler.erl
+ create mode 100644 src/networking/handler.erl
+ create mode 100644 src/networking/port.erl
+ create mode 100644 src/networking/serve.erl
+ create mode 100644 src/networking/talker.erl
+ create mode 100644 src/packer.erl
+ create mode 100644 src/testnet.app.src
+ create mode 100644 src/testnet_app.erl
+ create mode 100644 src/testnet_sup.erl
+ create mode 100644 src/web/black.png
+ create mode 100644 src/web/board.js
+ create mode 100644 src/web/board.png
+ create mode 100644 src/web/empty.png
+ create mode 100644 src/web/main.html
+ create mode 100644 src/web/mark.png
+ create mode 100644 src/web/new_game.js
+ create mode 100644 src/web/row1.png
+ create mode 100644 src/web/row10.png
+ create mode 100644 src/web/row100.png
+ create mode 100644 src/web/row11.png
+ create mode 100644 src/web/row12.png
+ create mode 100644 src/web/row13.png
+ create mode 100644 src/web/row14.png
+ create mode 100644 src/web/row15.png
+ create mode 100644 src/web/row16.png
+ create mode 100644 src/web/row17.png
+ create mode 100644 src/web/row18.png
+ create mode 100644 src/web/row19.png
+ create mode 100644 src/web/row2.png
+ create mode 100644 src/web/row20.png
+ create mode 100644 src/web/row21.png
+ create mode 100644 src/web/row22.png
+ create mode 100644 src/web/row23.png
+ create mode 100644 src/web/row24.png
+ create mode 100644 src/web/row25.png
+ create mode 100644 src/web/row26.png
+ create mode 100644 src/web/row27.png
+ create mode 100644 src/web/row28.png
+ create mode 100644 src/web/row29.png
+ create mode 100644 src/web/row3.png
+ create mode 100644 src/web/row30.png
+ create mode 100644 src/web/row31.png
+ create mode 100644 src/web/row32.png
+ create mode 100644 src/web/row33.png
+ create mode 100644 src/web/row34.png
+ create mode 100644 src/web/row35.png
+ create mode 100644 src/web/row36.png
+ create mode 100644 src/web/row37.png
+ create mode 100644 src/web/row38.png
+ create mode 100644 src/web/row39.png
+ create mode 100644 src/web/row4.png
+ create mode 100644 src/web/row40.png
+ create mode 100644 src/web/row41.png
+ create mode 100644 src/web/row42.png
+ create mode 100644 src/web/row43.png
+ create mode 100644 src/web/row44.png
+ create mode 100644 src/web/row45.png
+ create mode 100644 src/web/row46.png
+ create mode 100644 src/web/row47.png
+ create mode 100644 src/web/row48.png
+ create mode 100644 src/web/row49.png
+ create mode 100644 src/web/row5.png
+ create mode 100644 src/web/row50.png
+ create mode 100644 src/web/row51.png
+ create mode 100644 src/web/row52.png
+ create mode 100644 src/web/row53.png
+ create mode 100644 src/web/row54.png
+ create mode 100644 src/web/row55.png
+ create mode 100644 src/web/row56.png
+ create mode 100644 src/web/row57.png
+ create mode 100644 src/web/row58.png
+ create mode 100644 src/web/row59.png
+ create mode 100644 src/web/row6.png
+ create mode 100644 src/web/row60.png
+ create mode 100644 src/web/row61.png
+ create mode 100644 src/web/row62.png
+ create mode 100644 src/web/row63.png
+ create mode 100644 src/web/row64.png
+ create mode 100644 src/web/row65.png
+ create mode 100644 src/web/row66.png
+ create mode 100644 src/web/row67.png
+ create mode 100644 src/web/row68.png
+ create mode 100644 src/web/row69.png
+ create mode 100644 src/web/row7.png
+ create mode 100644 src/web/row70.png
+ create mode 100644 src/web/row71.png
+ create mode 100644 src/web/row72.png
+ create mode 100644 src/web/row73.png
+ create mode 100644 src/web/row74.png
+ create mode 100644 src/web/row75.png
+ create mode 100644 src/web/row76.png
+ create mode 100644 src/web/row77.png
+ create mode 100644 src/web/row78.png
+ create mode 100644 src/web/row79.png
+ create mode 100644 src/web/row8.png
+ create mode 100644 src/web/row80.png
+ create mode 100644 src/web/row81.png
+ create mode 100644 src/web/row82.png
+ create mode 100644 src/web/row83.png
+ create mode 100644 src/web/row84.png
+ create mode 100644 src/web/row85.png
+ create mode 100644 src/web/row86.png
+ create mode 100644 src/web/row87.png
+ create mode 100644 src/web/row88.png
+ create mode 100644 src/web/row89.png
+ create mode 100644 src/web/row9.png
+ create mode 100644 src/web/row90.png
+ create mode 100644 src/web/row91.png
+ create mode 100644 src/web/row92.png
+ create mode 100644 src/web/row93.png
+ create mode 100644 src/web/row94.png
+ create mode 100644 src/web/row95.png
+ create mode 100644 src/web/row96.png
+ create mode 100644 src/web/row97.png
+ create mode 100644 src/web/row98.png
+ create mode 100644 src/web/row99.png
+ create mode 100644 src/web/rpc.js
+ create mode 100644 src/web/star.png
+ create mode 100644 src/web/undo.js
+ create mode 100644 src/web/white.png
+ create mode 100644 start.sh
+zack:~/Hacking/row_of_6$ git remote add origin https://github.com/zack-bitcoin/six-in-a-row.git
+zack:~/Hacking/row_of_6$ git push origin master
+Username for 'https://github.com': zack-bitcoin
+Password for 'https://zack-bitcoin@github.com': slabs list understanding leave
+
+Counting objects: 64, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (64/64), 17.05 KiB | 0 bytes/s, done.
+Total 64 (delta 22), reused 0 (delta 0)
+remote: Resolving deltas: 100% (22/22), done.        
+To https://github.com/zack-bitcoin/six-in-a-row.git
+ * [new branch]      master -> master
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ cd src/web/
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png     row36.png  row71.png
+board.js      row37.png  row72.png
+board.js~     row38.png  row73.png
+board.png     row39.png  row74.png
+empty.png     row3.png   row75.png
+main.html     row40.png  row76.png
+main.html~    row41.png  row77.png
+mark.png      row42.png  row78.png
+new_game.js   row43.png  row79.png
+new_game.js~  row44.png  row7.png
+row100.png    row45.png  row80.png
+row10.png     row46.png  row81.png
+row11.png     row47.png  row82.png
+row12.png     row48.png  row83.png
+row13.png     row49.png  row84.png
+row14.png     row4.png   row85.png
+row15.png     row50.png  row86.png
+row16.png     row51.png  row87.png
+row17.png     row52.png  row88.png
+row18.png     row53.png  row89.png
+row19.png     row54.png  row8.png
+row1.png      row55.png  row90.png
+row20.png     row56.png  row91.png
+row21.png     row57.png  row92.png
+row22.png     row58.png  row93.png
+row23.png     row59.png  row94.png
+row24.png     row5.png   row95.png
+row25.png     row60.png  row96.png
+row26.png     row61.png  row97.png
+row27.png     row62.png  row98.png
+row28.png     row63.png  row99.png
+row29.png     row64.png  row9.png
+row2.png      row65.png  rpc.js
+row30.png     row66.png  rpc.js~
+row31.png     row67.png  star.png
+row32.png     row68.png  undo.js
+row33.png     row69.png  undo.js~
+row34.png     row6.png   white.png
+row35.png     row70.png
+zack:~/Hacking/row_of_6/src/web$ rm row*
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png  main.html~    star.png
+board.js   mark.png      undo.js
+board.js~  new_game.js   undo.js~
+board.png  new_game.js~  white.png
+empty.png  rpc.js
+main.html  rpc.js~
+zack:~/Hacking/row_of_6/src/web$ cp board.js board2.js
+zack:~/Hacking/row_of_6/src/web$ cd ../..
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/networking/handler.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> port:check().
+3010
+2>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:board().
+{{empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty},
+ {empty,white,black,empty,empty,empty,empty,empty,empty,
+        empty},
+ {empty,empty,black,white,empty,empty,empty,empty,empty,
+        empty},
+ {empty,empty,black,empty,empty,empty,black,empty,empty,
+        empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty},
+ {empty,empty,empty,empty,white,empty,white,empty,empty,
+        empty},
+ {empty,empty,empty,empty,white,empty,empty,empty,empty,
+        empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        empty},
+ {empty,empty,empty,empty,empty,empty,empty,empty,empty,
+        black}}
+2> packer:pack(board:board()).
+<<"[[\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\",\"empty\"],[\"empty\",\"white\",\"black\",\"empty\","...>>
+3> packer:unpack(packer:pack(board:board())).
+** exception error: no true branch found when evaluating an if expression
+     in function  packer:unpack_helper/1 (src/packer.erl, line 19)
+4> packer:pack({{1, 2, 3}}).
+<<"[[1,2,3]]">>
+5> packer:unpack(packer:pack({{1,2,3}})).
+** exception error: no true branch found when evaluating an if expression
+     in function  packer:unpack_helper/1 (src/packer.erl, line 19)
+6> packer:unpack(packer:pack([[1,2,3]])).
+[[1,2,3]]
+7>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:board().
+[[empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,black,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty,empty],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty,empty|...],
+ [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+  empty|...]]
+2> board:board().
+[[empty,empty,empty,empty],
+ [empty,black,empty,empty],
+ [empty,empty,empty,empty],
+ [empty,empty,empty,empty]]
+3>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/networking/handler.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> died!1> 
+=ERROR REPORT==== 11-Mar-2017::01:53:09 ===
+** Generic server board terminating 
+** Last message in was {'$gen_cast',{play,5,7}}
+** When Server state == {board,[{2,3}],
+                               2,
+                               {{empty,empty,empty,empty},
+                                {empty,empty,black,empty},
+                                {empty,empty,empty,empty},
+                                {empty,empty,empty,empty}},
+                               4}
+** Reason for termination == 
+** {{badmatch,false},
+    [{board,handle_cast,2,[{file,"src/board.erl"},{line,18}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+1> 
+=ERROR REPORT==== 11-Mar-2017::01:53:09 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.206.0> exit with reason: [{reason,{{{badmatch,false},[{board,handle_cast,2,[{file,"src/board.erl"},{line,18}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[board,board]}}},{mfa,{handler,handle,2}},{stacktrace,[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{board,board,0,[{file,"src/board.erl"},{line,42}]},{draw,doit,0,[{file,"src/draw.erl"},{line,6}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2552>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.206.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},43108}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",5,7]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}]
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ ls
+deps                README.md
+docs                README.md~
+ebin                rebar
+erl_crash.dump      rebar.config
+images              src
+install.sh          start.sh
+kill_all_erlang.sh  start.sh~
+zack:~/Hacking/row_of_6$ cd src/web/
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png     row11.png  row5.png
+board2.js     row12.png  row6.png
+board2.js~    row13.png  row7.png
+board.js      row14.png  row8.png
+board.js~     row15.png  row9.png
+board.png     row16.png  rpc.js
+empty.png     row17.png  rpc.js~
+main.html     row18.png  star.png
+main.html~    row19.png  undo.js
+mark.png      row1.png   undo.js~
+new_game.js   row2.png   white.png
+new_game.js~  row3.png
+row10.png     row4.png
+zack:~/Hacking/row_of_6/src/web$ rm row*
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png   empty.png     rpc.js
+board2.js   main.html     rpc.js~
+board2.js~  main.html~    star.png
+board.js    mark.png      undo.js
+board.js~   new_game.js   undo.js~
+board.png   new_game.js~  white.png
+zack:~/Hacking/row_of_6/src/web$ rm board.png 
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png   main.html     rpc.js~
+board2.js   main.html~    star.png
+board2.js~  mark.png      undo.js
+board.js    new_game.js   undo.js~
+board.js~   new_game.js~  white.png
+empty.png   rpc.js
+zack:~/Hacking/row_of_6/src/web$ cd ..
+zack:~/Hacking/row_of_6/src$ cd ..
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:play(1, 1).
+** exception error: bad argument
+     in function  board:play/2 (src/board.erl, line 66)
+2> b=board:board().
+** exception error: no match of right hand side value 
+                    [[empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty,empty|...],
+                     [empty,empty,empty,empty,empty,empty,empty,empty,empty,
+                      empty|...]]
+3> ==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+
+Eh?
+
+Eh?
+
+a
+
+zack:~/Hacking/row_of_6$ sh start.sh
+==> jiffy (get-deps)
+==> cowlib (get-deps)
+==> ranch (get-deps)
+==> cowboy (get-deps)
+==> row_of_6 (get-deps)
+==> jiffy (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> row_of_6 (compile)
+Compiled src/board.erl
+Eshell V7.3  (abort with ^G)
+1> start server
+1> board:play(1, 1).
+ok
+2> board:play(1, 1).
+** exception error: no match of right hand side value empty
+     in function  board:play/2 (src/board.erl, line 68)
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:13 ===
+Error in process <0.181.0> with exit value:
+{[{reason,{badmatch,empty}},
+  {mfa,{handler,handle,2}},
+  {stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},
+               {handler,handle,2,
+                        [{file,"src/networking/handler.erl"},{line,23}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.2490>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.181.0>},
+        {method,<<"POST">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},43384}},
+        {host,<<"localhost">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[]},
+        {headers,[{<<"host">>,<<"localhost:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,<<"*/*">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"referer">>,<<"http://localhost:3010/main.html">>},
+                  {<<"content-length">>,<<"12">>},
+                  {<<"content-type">>,<<"text/plain;charset=UTF-8">>},
+                  {<<"connection">>,<<"keep-alive">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<"[\"play\",8,7]">>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,no_state}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:13 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.181.0> exit with reason: {[{reason,{badmatch,empty}},{mfa,{handler,handle,2}},{stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2490>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.181.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},43384}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",8,7]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:19 ===
+Error in process <0.185.0> with exit value:
+{[{reason,{badmatch,empty}},
+  {mfa,{handler,handle,2}},
+  {stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},
+               {handler,handle,2,
+                        [{file,"src/networking/handler.erl"},{line,23}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.2541>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.185.0>},
+        {method,<<"POST">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},43390}},
+        {host,<<"localhost">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[]},
+        {headers,[{<<"host">>,<<"localhost:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,<<"*/*">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"referer">>,<<"http://localhost:3010/main.html">>},
+                  {<<"content-length">>,<<"12">>},
+                  {<<"content-type">>,<<"text/plain;charset=UTF-8">>},
+                  {<<"connection">>,<<"keep-alive">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<"[\"play\",8,8]">>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,no_state}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:19 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.185.0> exit with reason: {[{reason,{badmatch,empty}},{mfa,{handler,handle,2}},{stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2541>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.185.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},43390}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",8,8]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:21 ===
+Error in process <0.186.0> with exit value:
+{[{reason,{badmatch,empty}},
+  {mfa,{handler,handle,2}},
+  {stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},
+               {handler,handle,2,
+                        [{file,"src/networking/handler.erl"},{line,23}]},
+               {cowboy_handler,handler_handle,4,
+                               [{file,"src/cowboy_handler.erl"},{line,111}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.2542>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.186.0>},
+        {method,<<"POST">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},43392}},
+        {host,<<"localhost">>},
+        {host_info,undefined},
+        {port,3010},
+        {path,<<"/">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[]},
+        {headers,[{<<"host">>,<<"localhost:3010">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},
+                  {<<"accept">>,<<"*/*">>},
+                  {<<"accept-language">>,<<"en-US,en;q=0.5">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"referer">>,<<"http://localhost:3010/main.html">>},
+                  {<<"content-length">>,<<"12">>},
+                  {<<"content-type">>,<<"text/plain;charset=UTF-8">>},
+                  {<<"connection">>,<<"keep-alive">>}]},
+        {p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[]},
+        {body_state,waiting},
+        {buffer,<<"[\"play\",7,8]">>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,no_state}],
+ [{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3> 
+=ERROR REPORT==== 11-Mar-2017::02:13:21 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.186.0> exit with reason: {[{reason,{badmatch,empty}},{mfa,{handler,handle,2}},{stacktrace,[{board,play,2,[{file,"src/board.erl"},{line,68}]},{handler,handle,2,[{file,"src/networking/handler.erl"},{line,23}]},{cowboy_handler,handler_handle,4,[{file,"src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.2542>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.186.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},43392}},{host,<<"localhost">>},{host_info,undefined},{port,3010},{path,<<"/">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:3010">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0">>},{<<"accept">>,<<"*/*">>},{<<"accept-language">>,<<"en-US,en;q=0.5">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"referer">>,<<"http://localhost:3010/main.html">>},{<<"content-length">>,<<"12">>},{<<"content-type">>,<<"text/plain;charset=UTF-8">>},{<<"connection">>,<<"keep-alive">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<"[\"play\",7,8]">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{state,no_state}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+3>   C-c C-c
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+
+zack:~/Hacking/row_of_6$ cd src/web/
+zack:~/Hacking/row_of_6/src/web$ ls
+black.png   main.html     rpc.js~
+board2.js   main.html~    star.png
+board2.js~  mark.png      undo.js
+board.js    new_game.js   undo.js~
+board.js~   new_game.js~  white.png
+empty.png   rpc.js
+zack:~/Hacking/row_of_6/src/web$ rm board.js
+zack:~/Hacking/row_of_6/src/web$ mv board2.js board.js
